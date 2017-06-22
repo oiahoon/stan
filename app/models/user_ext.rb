@@ -1,0 +1,2 @@
+class UserExt < ApplicationRecord
+end
