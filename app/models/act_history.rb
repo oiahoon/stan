@@ -1,0 +1,2 @@
+class ActHistory < ApplicationRecord
+end
