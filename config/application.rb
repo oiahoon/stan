@@ -21,5 +21,9 @@ module Stan
       g.integration_tool :rspec
       g.template_engine :slim
     end
+    # deal with the error form by myself
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance|
+      html_tag
+    }
   end
 end

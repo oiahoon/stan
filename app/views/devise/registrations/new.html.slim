@@ -2,7 +2,7 @@
   .column
     h2.ui.teal.image.header
       .content Sign up
-    = form_for(resource, as: resource_name, url: registration_path(resource_name), :html => { :class => "ui large form" }) do |f|
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), :html => { :class => form_class }) do |f|
       = devise_error_messages!
       .ui.stacked.segment
         .field
@@ -26,3 +26,8 @@
           = f.submit "Sign up", class: "ui fluid large teal submit button"
     .ui.message
       = render "devise/shared/links"
+
+css:
+  #error_explanation {
+    text-align: left;
+  }
